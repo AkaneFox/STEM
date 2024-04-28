@@ -1,0 +1,360 @@
+<html>
+  <head>
+    <title>Stem Program</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-image: url(background.jpeg);
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .menu-bar {
+        background: white;
+        text-align: center;
+      }
+      .menu-bar ul {
+        display: inline-flex;
+        list-style: none;
+        color: #fff;
+      }
+      .menu-bar ul li {
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+      }
+      .menu-bar ul li a {
+        text-decoration: none;
+        color: rgb(185, 36, 36);
+      }
+      .active,
+      .menu-bar ul li:hover {
+        background: rgb(218, 207, 207);
+        border-radius: 3px;
+      }
+      .menu-bar .fa {
+        margin-right: 8px;
+      }
+      .sub-menu-1 {
+        display: none;
+      }
+      .menu-bar ul li:hover .sub-menu-1 {
+        display: block;
+        position: absolute;
+        background: white;
+        margin-top: 15x;
+        margin-left: -15px;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul {
+        display: block;
+        margin: 10px;
+      }
+      .menu-bar ul li:hover .sub-menu-1 ul li {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted rgb(199, 185, 185);
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+        width: 100%;
+      }
+      .logo_area {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+      }
+      .container {
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 92%;
+        transform: translate(-80%, 20%);
+        font-family: American Typewriter, serif;
+      }
+      .container span {
+        display: block;
+        text-transform: uppercase;
+      }
+      .text1 {
+        color: white;
+        font-size: 55px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        position: relative;
+        animation: text 3s 1;
+        text-decoration: underline;
+        text-decoration-color: white;
+      }
+      .text2 {
+        color: white;
+        font-size: 55px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        /* position: relative; */
+        /* animation: text 3s 1; */
+        text-decoration: underline;
+        text-decoration-color: white;
+      }
+      .text3 {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        color: #8bb;
+        text-decoration: underline;
+        text-decoration-color: #8bb;
+      }
+      @keyframes text {
+        0% {
+          color: black;
+          margin-bottom: -40px;
+        }
+        30% {
+          letter-spacing: 25px;
+          margin-bottom: -40px;
+        }
+        85% {
+          letter-spacing: 8px;
+          margin-bottom: -40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="text1">STEM</span>
+      <span class="text2">EDUCATION</span>
+      <span class="text3">Leads to Better Career</span>
+    </div>
+    <div class="logo_area">
+      <a href=""><img src="ned logo.jpeg" alt="" /></a>
+    </div>
+    <div class="menu-bar">
+      <ul>
+        <li class="active">
+          <a href="#"
+            ><i class="fa fa-youtube-play" aria-hidden="true"></i>Motivational
+            Videos</a
+          >
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=51yGC3iytbY"
+                  >Buddy Robot</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ISp8Q3ga0F0"
+                  >Robo War</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=x2tLx-S7KZY"
+                  >Robo Race</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=3OWYOatzJZE"
+                  >Robo Soccer</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=2Lhh0SSexSU"
+                  >Incredible Flying Vehicles</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=sogQaN3rNuY"
+                  >STINGER vs CAPT SHREDERATOR</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="#"
+            ><i class="fa fa-credit-card-alt" aria-hidden="true"></i>About
+            Software</a
+          >
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a href="https://www.arduino.cc/en/main/software"
+                  >Arduino Software download</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/0B3v7O1ED-G9_U1Rxb0pnTGo0cTA?usp=sharing"
+                  >Arduino Driver Download</a
+                >
+              </li>
+              <li>
+                <a href="https://www.arduino.cc/en/Guide/ArduinoUno#toc3"
+                  >How to install Arduino</a
+                >
+              </li>
+              <li>
+                <a href="https://https://www.youtube.com/watch?v=YCDYIf7p_Z0"
+                  >Video: How to install driver for Arduino</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://https://https://www.youtube.com/watch?v=px2JhWni1wc"
+                  >Video: Arduino Selecting Port for Uploading</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://https://https://www.youtube.com/watch?v=FhBX4n-VuuA"
+                  >Video: How to Download Arduino IDE</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa fa-android" aria-hidden="true"></i>Class Activities</a
+          >
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a href="https://github.com/stem-course/led-blinking"
+                  >Led blinking program</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/burglar-alarm"
+                  >Burglar Alarm</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/traffic-light"
+                  >Basic Traffic Light</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/stem-course/bluetooth-controlled-car"
+                  >Bluetooth controlled car</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/rgb-led">RGB Led</a>
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/buzzer-tones"
+                  >Buzzer tunes</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/thermometer"
+                  >Thermometer</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/thermostat"
+                  >Thermostat</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/rgbled-buzzer"
+                  >Pattern of RGB Light with Different Tunes</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="#"><i class="fa fa-users" aria-hidden="true"></i>Homework</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/stem-course/controlling-device-by-bluetooth"
+                  >Bluetooth Controlled Led</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="#"
+            ><i class="fa fa-puzzle-piece" aria-hidden="true"></i>Projects</a
+          >
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a href="https://github.com/stem-course/Burglar-alarm-using-PIR"
+                  >Burglar Alarm using PIR sensor</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/buzzer-with-button"
+                  >Buzzer using button</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/stem-course/bluetooth-controlled-LCD"
+                  >Bluetooth controlled LCD</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/Display-clock-at-LCD"
+                  >Clock on LCD</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/password-protected-lock"
+                  >Password Protected Lock</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/stem-course/Distance-using-Distance-Sensor"
+                  >Distance Sensor to display distance</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/obstacle-avoiding-car"
+                  >Obstacle Avoiding Car</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/stem-course/Line-Following-Robot-Car"
+                  >Line following Robot</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/stem-course/Speedometer"
+                  >Speedometer</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

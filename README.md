@@ -1,2 +1,2 @@
-# STEM
-STEM website
+# stem-course.github.io
+Support website for stem course.

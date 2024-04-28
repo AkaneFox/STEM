@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Resources & Books</title>
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="transparent-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Logo -->
+          <div class="navbar-brand">
+            <a class="logo" href="index.html">
+              <img src="./img/NED logo.png" alt="logo" />
+              <img src="./img/NCL logo.png" alt="logo" />
+            </a>
+          </div>
+          <!-- /Logo -->
+
+          <!-- Mobile toggle -->
+          <button class="navbar-toggle">
+            <span></span>
+          </button>
+          <!-- /Mobile toggle -->
+        </div>
+
+        <!-- Navigation -->
+        <nav id="nav">
+          <ul class="main-menu nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#courses-wrapper">Courses</a></li>
+            <li><a href="ResourceAll.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- /Navigation -->
+      </div>
+    </header>
+    
+    <!-- /Header -->
+  <style>
+    
+
+    .drop {
+      display: inline-block;
+      position: relative;
+    }
+    .drop button {
+      border: none;
+      padding: 8px 16px;
+      background-color: #c92f1a;
+      color: white;
+      transition: 0.3s;
+      cursor: pointer;
+      margin-top: 20px;
+      font-family:sans-serif;
+    }
+    .drop:hover button {
+      background-color: #c92f1a;
+    }
+    .drop div {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      visibility: hidden;
+      position: absolute;
+      min-width: 100%;
+
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .drop:hover div {
+      visibility: visible;
+      opacity: 1;
+    }
+    .drop div {
+      display: block;
+      text-decoration: none;
+      padding: 8px;
+      color: black;
+    }
+    .drop div a {
+      width: 700px;
+      height: 40px;
+      border-bottom: 2px dotted #c92f1a;
+
+      display: block;
+      text-decoration: none;
+      padding: 8px;
+      color: black;
+    }
+    .resources {
+      background-color: white;
+    }
+    .heading h1{
+      text-align: center;
+      color: rgba(202, 55, 18, 0.904);
+      margin-top: 100px;
+      font-size: 38px;
+    }
+    .basic {
+      font-size: large;
+      text-align: left;
+      margin-top: 100px;
+      margin-left: 50px;
+      color: black;
+    }
+    .app {
+      font-size: large;
+      text-align: left;
+      margin-top: 150px;
+      margin-left: 50px;
+      color: black;
+      border-top: 3px dashed rgb(219, 205, 205);
+    }
+    .web {
+      font-size: large;
+      text-align: left;
+      margin-top: 150px;
+      margin-left: 50px;
+      color: black;
+      border-top: 3px dashed rgb(219, 205, 205);
+    }
+    .and {
+      font-size: large;
+      text-align: left;
+      margin-top: 150px;
+      margin-bottom: 150px;
+      margin-left: 50px;
+      color: black;
+      border-top: 3px dashed rgb(219, 205, 205);
+    }
+
+    .btn {
+      display: inline-flex;
+      position: relative;
+      left: 600px;
+      
+      
+    }
+    .btn button {
+      border: none;
+      padding: 8px 16px;
+      background-color: #c92f1a;
+      color: white;
+      transition: 0.3s;
+      cursor: pointer;
+      margin-top: 0;
+      font-size: 18px;
+      font-family:sans-serif;
+     
+    }
+    .btn:hover button {
+      background-color: #c92f1a;
+      
+    }
+    @media handheld, only screen and (max-width: 700px) {
+ 
+ .drop {
+ display: inline-block;
+ position: relative;
+}
+.drop button {
+ border: none;
+ padding: 8px 5px;
+ background-color: #c92f1a;
+ color: white;
+ transition: 0.3s;
+ cursor: pointer;
+ margin-top: 20px;
+ font-family:sans-serif;
+ font-size: 14px;
+}
+.drop:hover button {
+ background-color: #c92f1a;
+}
+.drop div {
+ background-color: white;
+ box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+ z-index: 1;
+ visibility: hidden;
+ position: absolute;
+ min-width: 50%;
+ font-size: 12px;
+
+ opacity: 0;
+ transition: 0.3s;
+}
+.drop:hover div {
+ visibility: visible;
+ opacity: 1;
+}
+.drop div {
+ display: block;
+ text-decoration: none;
+ padding: 8px;
+ color: black;
+
+}
+.drop div a {
+ width: 200%;
+ height: 40px;
+ border-bottom: 2px dotted #c92f1a;
+
+ display: block;
+ text-decoration: none;
+ padding: 8px;
+ color: black;
+}
+.resources {
+ background-color: white;
+}
+.heading h1{
+ text-align: center;
+ 
+ color: rgba(202, 55, 18, 0.904);
+ margin-top: 100px;
+ font-size: 30px;
+}
+.heading h2{
+ font-size: 20px;
+ border-top: 1px dashed rgb(219, 205, 205);
+}
+.basic {
+ font-size: large;
+ text-align: left;
+ margin-top: 100px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+.app {
+ font-size: large;
+ text-align: left;
+ margin-top: 200px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+.web {
+ font-size: large;
+ text-align: left;
+ margin-top: 200px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+.and {
+ font-size: large;
+ text-align: left;
+ margin-top: 200px;
+ margin-bottom: 150px;
+ margin-left: 40px;
+ color: black;
+ border-top: 0px dashed rgb(219, 205, 205);
+}
+
+
+.btn {
+ display: inline-block;
+ position: relative;
+ top: 0px;
+ left: 10px;
+ 
+ 
+}
+.btn button {
+ border: none;
+ padding: 8px 10px;
+ background-color: #c92f1a;
+ color: white;
+ transition: 0.3s;
+ cursor: pointer;
+ margin-top: 0;
+ font-size: 14px;
+ font-family:sans-serif;
+
+}
+.btn:hover button {
+ background-color: #c92f1a;
+ 
+}
+
+}
+    
+  </style>
+  <body>
+  
+    <section class="resources" id="resources">
+      <div class="heading">
+        <h1>Resources & Books</h1>
+        <div class="basic" id="basic">
+          <!-- <div class="and" id="and"> -->
+            <h2>Robotics</h2>
+            <div class="drop">
+              <button>Teacher's Guide</button>
+              <div>
+                <a href="https://www.ietfaradaymalaysia.com/uploads/5/2/0/2/52024769/faraday_guidebook_v2.pdf" target="_blank">
+                 Tinkercad Guidebook</a
+                >
+               
+              </div>
+            </div>
+            <div class="btn">
+              
+              <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EaIeDq5qM5dOhiZVkvRjh64B1Tlo663prHpzM_BPeKk9bQ?e=1xl4jI"target="_blank"><button>Book</button></a>
+               -->
+            </div>
+          </div> 
+      </div>
+    </section>
+    <section class="resources" id="resources">
+      <div class="heading">
+        <h1></h1>
+        <div class="and" id="and">
+          <h2>Internet of Things</h2>
+          <div class="drop">
+            <button>Teacher's Guide</button>
+            <div>
+              <a href="https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/" target="_blank">
+                Setup ESP8266 Board in Arduino IDE</a>
+              
+            </div>
+          </div>
+          <div class="btn">
+            
+            
+        <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EYCigckyU4xBkEuVkRVaFxYBMwWs5i9A9mqxvYvPuSI9hw?e=1PrzCA"target="_blank"><button>Book</button></a>
+             -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="resources" id="resources">
+      <div class="heading">
+        <h1></h1>
+        <div class="and" id="and">
+        <h2>Basic Block Coding</h2>
+          <div class="drop">
+            <button>Teacher's Guide</button>
+            <div>
+              <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EWNG8yUZUEBNsWqZQDCCdjgBqyW1YgTfiUiz0m5iuv5Ykw?e=HB8Bne" target="_blank"> -->
+              Download Worksheets</a
+            >
+              <a href="https://code.org/athome/project-ideas" target="_blank">
+                Open-ended projects that use Code.org tools.</a
+              >
+              <a
+                href="https://support.code.org/hc/en-us/articles/115001554911-Configuring-sharing-options-for-students-using-App-Lab-Game-Lab-and-Web-Lab"
+                target="_blank"
+                >Helpful link for using this platform.</a
+              >
+
+              <!--button>Teacher's Guide</button-->
+            </div>
+          </div>
+          <div class="btn">
+            
+    
+              <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EYskq-6A6EdOioUIu7rJZaUBMJe6kttQ0nn3JbIqroNrqw?e=9eCtAo"target="_blank"" target="_blank"> <button>Book</button></a>
+             -->
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section class="resources" id="resources">
+      <div class="heading">
+        <h1></h1>
+        <div class="app" id="app">
+          <h2>App Development</h2>
+          <div class="drop">
+            <button>Teacher's Guide</button>
+            <div>
+              <a
+                href="https://studio.code.org/s/applab-intro/lessons/1/levels/8"
+                target="_blank"
+              >
+                Introduction to App labs.</a
+              >
+              <a href="https://youtu.be/LnUyPQXXuYo" target="_blank"
+                >How to create an Apk file.</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=BT4YihNXiYw&list=PL7sbjUYIdF3Ux_UrRiBaC73OrJLvLza4u"
+                target="_blank"
+                >MIT App inventer tutorial.</a
+              >
+              <a
+                href="http://appinventor.mit.edu/explore/ai2/setup-emulator.html"
+                target="_blank"
+                >Click to install the emulator.</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=vd3R8ZurzUU"
+                target="_blank"
+                >How to download and use the emulator.</a
+              >
+
+              <!--button>Teacher's Guide</button-->
+            </div>
+          </div>
+          <div class="btn">
+            
+            
+              <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EVC60zc2ErBBoZQtS8mHMz4BeO_dx6mOo_x5XwSsCbxeDA?e=TENCMA"target="_blank"> <button>Book</button></a>
+             -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <div class="heading">
+        <h1></h1>
+        <div class="web" id="web">
+          <h2>Web Development</h2>
+          <div class="drop">
+            <button>Teacher's Guide</button>
+            <div>
+              <a
+                href="https://support.code.org/hc/en-us/articles/115001554911-Configuring-sharing-options-for-students-using-App-Lab-Game-Lab-and-Web-Lab"
+                target="_blank"
+              >
+                Configuring sharing options for students using App Lab, Game
+                Lab, and Web Lab.</a
+              >
+
+              <!--button>Teacher's Guide</button-->
+            </div>
+          </div>
+          <div class="btn">
+            
+            
+              <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EXzhAvwXrZhEmaDI4026CGUBzGwcyPQCQ43I9fL2JoBYiQ?e=ELln17"target="_blank"> <button>Book</button></a>
+             -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <div class="heading">
+        <h1></h1>
+        <div class="and" id="and">
+          <h2>Artificial Intelligence & Machine Learning</h2>
+          <div class="drop">
+            <button>Teacher's Guide</button>
+            <div>
+              <a href="https://machinelearningforkids.co.uk/#!/worksheets" target="_blank">
+                Explore more projects.</a
+              >
+              <a href="http://www.pics4learning.com"target="_blank">Images Sources</a>
+              <a href="https://search.creativecommons.org/ "target="_blank">Images Sources</a>
+
+              <!--button>Teacher's Guide</button-->
+            </div>
+          </div>
+          <div class="btn">
+            
+            
+              <!-- <a href="https://pern-my.sharepoint.com/:b:/g/personal/urooj_78034706_talmeez_pk/EaUMMYZ7xIZOodAQOY1-saoBzB0CSeeaxCNvxcouz1b9SA?e=0qO8YL"target="_blank"> <button>Book</button></a>
+             -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+     <!-- Footer >-->
+  <footer id="footer" class="section">
+    <!-- container >-->
+    <div class="container">
+      <!-- row >-->
+      <div class="row">
+      <!-- footer logo -->
+      <div class="col-md-6">
+        <!--div class="footer-logo">
+        <a class="logo" href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        </div-->
+      </div>
+      <!-- footer logo -->
+  
+      <!-- footer nav -->
+      <div class="col-md-6">
+        <!--ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="blog.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul-->
+      </div>
+      <!-- /footer nav -->
+      </div>
+      <!-- /row -->
+  
+      <!-- row -->
+      <div id="bottom-footer" class="row">
+      <!-- social -->
+      <div class="col-md-4 col-md-push-8">
+        <ul class="footer-social">
+        <li>
+          <a href="https://www.facebook.com/nc.ncai" class="facebook"
+          ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+  
+        <li>
+          <a
+          href="https://www.youtube.com/channel/UCOyh_A31fD4-hc9xijwS7oA"
+          class="youtube"
+          ><i class="fa fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a
+          href="https://www.linkedin.com/company/ned-nclab"
+          class="linkedin"
+          ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+        </ul>
+      </div>
+      <!-- /social -->
+  
+           <!-- copyright -->
+      <div class="col-md-8 col-md-pull-4">
+        <div class="footer-copyright">
+          <span
+          >&copy;  All Rights Reserved, Neurocomputation Lab  <!--i class="fa fa-heart-o" aria-hidden="true"></i> by
+          <a href="https://colorlib.com">Colorlib</a></span
+          -->
+        </div>
+        </div>
+        <!-- /copyright -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- /container -->
+      </footer>
+      <!-- /Footer -->
+  
+      <!-- preloader -->
+      <div id="preloader"><div class="preloader"></div></div>
+      <!-- /preloader -->
+  
+      <!-- jQuery Plugins -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+    </body>
+  </html>
